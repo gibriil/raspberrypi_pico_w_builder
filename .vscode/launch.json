@@ -1,0 +1,16 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node-terminal",
+            "name": "Build UF2",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "command": "docker build . -t pico && docker run --name pico-builder pico && docker cp pico-builder:/builder/src/dist/blink.uf2 . && docker rm pico-builder && exit",
+            "postDebugTask": "Flash Pico"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "raspberrypi:pico-w",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${PICO_SDK_PATH}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "intelliSenseMode": "linux-gcc-arm",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
